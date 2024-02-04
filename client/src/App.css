@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+    
+body {
+  background-color: #f5f6ff;
+  /* background-color: red; */
+  z-index: 10;
+  background-color: rgb(255, 255, 255);
+}
+
+.container {
+  max-width: 700px;
+  margin: 20px auto;
+  overflow: hidden;
+  padding: 10px;
+  /* background-color: blue; */
+}
+
+
+.btn {
+  border: none;
+  padding: 7px 15px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #194064;
+}
+
+.btn-add {
+  background-color: #194064;
+  color: white;
+  cursor: pointer;
+}
+
+.addContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  padding: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+   /* Decreased opacity */
+  z-index: 10;
+}
+
+.addContainer form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  box-shadow: 5px 5px 5px 5px #888888;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.addContainer form input {
+  padding: 10px;
+  margin: 10px;
+  width: 80%;
+  border-radius: 5px;
+  border: 1px solid #194064;
+}
+
+.addContainer form button {
+  padding: 10px;
+  margin: 10px;
+  width: 80%;
+  border-radius: 5px;
+  border: none;
+  background-color: #194064;
+  color: white;
+  cursor: pointer;
+}
+
+.addContainer form button:hover,
+.addContainer form button:active,
+.addContainer form button:focus,
+.addContainer form button:visited {
+  background-color: #194064;
+  color: white;
+}
+
+.addContainer form .close-btn {
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: auto;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+}
+
+.tableContainer {
+  margin-top: 20px;
+  overflow: hidden;
+  padding: 10px;
+  box-shadow: 5px 5px 5px 5px #888888;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th {
+  background-color: #194064;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #194064;
+  width: fit-content;
+}
+
+table tr:hover {
+  background-color: #f5f6ff;
+}
+
+.tableContainer .btn {
+  margin: 10px;
+  border-bottom: 1px solid #194064;
+}
+
+.tableContainer thead {
+  background-color: #194064;
+  color: white;
+}
+
+.tableContainer .btn-edit,
+.tableContainer .btn-delete {
+  background-color: #194064;
+  color: white;
+  cursor: pointer;
+}
